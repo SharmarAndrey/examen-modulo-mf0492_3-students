@@ -1,13 +1,14 @@
 
 function filterPendingTaks(tasks) {
 
+	return tasks.filter(task => !task.completed);
 }
 
 const tasks = [
-  { task: "Wash the dishes", completed: true },
-  { task: "Exercise", completed: false },
-  { task: "Study programming", completed: false },
-  { task: "Clean the house", completed: true },
+	{ task: "Wash the dishes", completed: true },
+	{ task: "Exercise", completed: false },
+	{ task: "Study programming", completed: false },
+	{ task: "Clean the house", completed: true },
 ];
 
 const result = filterPendingTaks(tasks);
